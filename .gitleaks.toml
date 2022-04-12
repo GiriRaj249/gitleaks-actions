@@ -40,7 +40,7 @@ title = "gitleaks config"
 	regex = '''(?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]'''
 	tags = ["secret", "LinkedIn"]
 [[rules]]
-	description = "Slack"
+	description = "Slacki"
 	regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})?'''
 	tags = ["key", "Slack"]
 [[rules]]
