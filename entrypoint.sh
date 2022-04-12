@@ -10,8 +10,8 @@ fi
 
 echo running gitleaks "$(gitleaks --version) with the following command👇"
 
-DONATE_MSG="👋 maintaining gitleaks takes a lot of work so consider sponsoring me or donating a little 
-something\n\e[36mhttps://github.com/sponsors/zricethezav\n\e[36mhttps://www.paypal.me/zricethezav\n"
+DONATE_MSG=""
+CONFIG="--config $GITHUB_WORKSPACE/.gitleaks.toml"
 
 if [ "$GITHUB_EVENT_NAME" = "push" ]
 then
