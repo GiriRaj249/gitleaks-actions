@@ -11,7 +11,7 @@ fi
 echo running gitleaks "$(gitleaks --version) with the following command👇"
 
 DONATE_MSG=""
-CONFIG="--config $GITHUB_WORKSPACE/action/.gitleaks.toml"
+CONFIG="--config-path $GITHUB_WORKSPACE/.gitleaks.toml"
 
 if [ "$GITHUB_EVENT_NAME" = "push" ]
 then
