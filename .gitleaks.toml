@@ -42,7 +42,7 @@ title = "gitleaks config"
 [[rules]]
 	description = "Slacki"
 	regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})?'''
-	tags = ["key", "Slack"]
+	tags = ["key", "Slacki"]
 [[rules]]
 	description = "Asymmetric Private Key"
 	regex = '''-----BEGIN ((EC|PGP|DSA|RSA|OPENSSH) )?PRIVATE KEY( BLOCK)?-----'''
