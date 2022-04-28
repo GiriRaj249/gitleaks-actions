@@ -101,4 +101,4 @@ title = "gitleaks config"
 	tags = ["key", "twilio"]
 [[whitelist.rules]]
 	description = "Ignore python imports"
-	regexes = ["^twitter_url.*"]
+	regex = ["^twitter_url.*"]
