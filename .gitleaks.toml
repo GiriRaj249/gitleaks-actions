@@ -99,8 +99,6 @@ title = "gitleaks config"
 	description = "Twilio API key"
 	regex = '''(?i)twilio(.{0,20})?['\"][0-9a-f]{32}['\"]'''
 	tags = ["key", "twilio"]
-[allowlist]
-	description = "Allowlisted files"
-	files = ['''^\.?gitleaks.toml$''',
-	'''(.*?)(jpg|gif|doc|pdf|bin)$''',
-	'''(go.mod|go.sum)$''']
+[[whitelist.rules]]
+	description = "Ignore python imports"
+	regexes = ["^twitter_url.*"]
