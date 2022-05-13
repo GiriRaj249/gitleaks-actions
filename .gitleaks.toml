@@ -40,9 +40,9 @@ title = "gitleaks config"
 	regex = '''(?i)linkedin(.{0,20})?['\"][0-9a-z]{16}['\"]'''
 	tags = ["secret", "LinkedIn"]
 [[rules]]
-	description = "Slacki"
+	description = "Slack-token"
 	regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})?'''
-	tags = ["key", "Slacki"]
+	tags = ["key", "Slack-token"]
 [[rules]]
 	description = "Asymmetric Private Key"
 	regex = '''-----BEGIN ((EC|PGP|DSA|RSA|OPENSSH) )?PRIVATE KEY( BLOCK)?-----'''
