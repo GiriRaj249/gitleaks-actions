@@ -48,10 +48,10 @@ title = "gitleaks config"
 	description = "Asymmetric Private Key"
 	regex = '''-----BEGIN ((EC|PGP|DSA|RSA|OPENSSH) )?PRIVATE KEY( BLOCK)?-----'''
 	tags = ["key", "AsymmetricPrivateKey"]
-[[rules]]
-	description = "Generic Credential"
-	regex = '''^(?!client+id).+[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
-	tags = ["key", "API", "generic"]
+#[[rules]]
+#	description = "Generic Credential"
+#	regex = '''^(?!client+id).+[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
+#	tags = ["key", "API", "generic"]
 [[rules]]
 	description = "Google API key"
 	regex = '''AIza[0-9A-Za-z\\-_]{35}'''
