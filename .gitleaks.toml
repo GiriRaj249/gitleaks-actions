@@ -89,7 +89,7 @@ title = "gitleaks config"
 	tags = ["key", "Stripe"]
 [[rules]]
 	description = "Encompass"
-	regex = '''[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
+	regex = '''(?i)(client_id|client id)[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
 	tags = ["key", "encompass"]
 	
 [[rules]]
