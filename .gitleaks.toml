@@ -50,7 +50,7 @@ title = "gitleaks config"
 	tags = ["key", "AsymmetricPrivateKey"]
 [[rules]]
 	description = "Generic Credential"
-	regex = '''^(?!client+id)|(?!client+secret).+[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
+	regex = '''^(?!client+id).+[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
 	tags = ["key", "API", "generic"]
 [[rules]]
 	description = "Google API key"
