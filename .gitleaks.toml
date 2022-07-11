@@ -87,10 +87,6 @@ title = "gitleaks config"
 	description = "Stripe API key"
 	regex = '''(?i)stripe(.{0,20})?['\"][sk|rk]_live_[0-9a-zA-Z]{24}'''
 	tags = ["key", "Stripe"]
-[[rules]]
-	description = "Encompass"
-	regex = '''^(?!client+id)|(?!client+secret).+[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
-	tags = ["key", "encompass"]
 	
 [[rules]]
 	description = "Square access token"
