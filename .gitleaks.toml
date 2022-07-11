@@ -88,6 +88,11 @@ title = "gitleaks config"
 	regex = '''(?i)stripe(.{0,20})?['\"][sk|rk]_live_[0-9a-zA-Z]{24}'''
 	tags = ["key", "Stripe"]
 [[rules]]
+	description = "Encompass"
+	regex = '''[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
+	tags = ["key", "encompass"]
+	
+[[rules]]
 	description = "Square access token"
 	regex = '''sq0atp-[0-9A-Za-z\-_]{22}'''
 	tags = ["key", "square"]
