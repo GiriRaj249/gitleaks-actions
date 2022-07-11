@@ -15,13 +15,13 @@ CONFIG="--config-path=$GITHUB_WORKSPACE/action/.gitleaks.toml"
 
 if [ "$GITHUB_EVENT_NAME" = "push" ]
 then
-  echo gitleaks --path=$GITHUB_WORKSPACE --verbose  --commit=$GITHUB_SHA $CONFIG
-  CAPTURE_OUTPUT=$(gitleaks --path=$GITHUB_WORKSPACE --verbose --commit=$GITHUB_SHA $CONFIG)
+  echo gitleaks --path=$GITHUB_WORKSPACE --verbose   $CONFIG
+  CAPTURE_OUTPUT=$(gitleaks --path=$GITHUB_WORKSPACE --verbose  $CONFIG)
 elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]
 then 
   git --git-dir="$GITHUB_WORKSPACE/.git" log --left-right --cherry-pick --pretty=format:"%H" remotes/origin/$GITHUB_BASE_REF... > commit_list.txt
-  echo gitleaks --path=$GITHUB_WORKSPACE --verbose  --commits-file=commit_list.txt $CONFIG
-  CAPTURE_OUTPUT=$(gitleaks --path=$GITHUB_WORKSPACE --verbose --commits-file=commit_list.txt $CONFIG)
+  echo gitleaks --path=$GITHUB_WORKSPACE --verbose  $CONFIG
+  CAPTURE_OUTPUT=$(gitleaks --path=$GITHUB_WORKSPACE --verbose $CONFIG)
 fi
 
 if [ $? -eq 1 ]
