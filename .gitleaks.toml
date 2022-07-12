@@ -101,6 +101,13 @@ title = "gitleaks config"
 	description = "Twilio API key"
 	regex = '''(?i)twilio(.{0,20})?['\"][0-9a-f]{32}['\"]'''
 	tags = ["key", "twilio"]
+keywords = [
+  "auth",
+  "password",
+  "token",
+  "client id",
+  "client secret"
+]
 #[[whitelist.rules]]
 	#description = "Ignore python imports"
 	#regex = ["^twitter_url.*"]
