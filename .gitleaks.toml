@@ -49,9 +49,9 @@ title = "gitleaks config"
 	regex = '''-----BEGIN ((EC|PGP|DSA|RSA|OPENSSH) )?PRIVATE KEY( BLOCK)?-----'''
 	tags = ["key", "AsymmetricPrivateKey"]
 [[rules]]
-	description = "Generic Credential"
-	regex = '''client id[baprs]-([0-9a-zA-Z]{64})?'''
-	tags = ["key", "API", "generic"]
+	description = "Encompass"
+	regex = '''^(?!\bclient secret\b)|(?!client+id)+[\d|\w|\$|\*|\^|\!|\@|\#|\&|\()]{64}'''
+	tags = ["token", "API", "encompass"]
 [[rules]]
 	description = "Google API key"
 	regex = '''AIza[0-9A-Za-z\\-_]{35}'''
