@@ -51,7 +51,7 @@ title = "gitleaks config"
 [[rules]]
 	description = "Encompass"
 	regex = '''^(\bclient secret\b)|(?!client+id)+[\d|\w]{64}'''
-	tags = ["token", "API", "encompass"]
+	
 [[rules]]
 	description = "Google API key"
 	regex = '''AIza[0-9A-Za-z\\-_]{35}'''
