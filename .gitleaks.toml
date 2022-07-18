@@ -1,6 +1,6 @@
 title = "gitleaks config"
 [[rules]]
-	description = "AWS jing ID"
+	description = "AWS Access ID"
 	regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
 	tags = ["key", "AWS"]
 	
